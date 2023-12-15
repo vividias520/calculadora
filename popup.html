@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de Risco Cardiovascular</title>
+</head>
+
+<body>
+    <div class="popup">
+        <h1 class="title">Calculadora de Risco Cardiovascular</h1>
+        <span class="close" onclick="window.close()">&times;</span>
+
+        <label for="age">Idade (anos):</label>
+        <input type="number" id="age" placeholder="Idade">
+
+        <label for="gender">Sexo:</label>
+        <select id="gender">
+            <option value="male">Masculino</option>
+            <option value="female">Feminino</option>
+        </select>
+
+        <label for="cholesterol">Colesterol Total (mg/dL):</label>
+        <input type="number" id="cholesterol" placeholder="Colesterol Total">
+
+        <label for="hdl">Colesterol HDL (mg/dL):</label>
+        <input type="number" id="hdl" placeholder="Colesterol HDL">
+
+        <label for="sbp">Pressão Arterial (mmHg):</label>
+        <input type="text" id="sbp" placeholder="Pressão Arterial">
+
+        <label for="weight">Peso (kg):</label>
+        <input type="number" id="weight" placeholder="Peso">
+
+        <label for="height">Altura (cm):</label>
+        <input type="number" id="height" placeholder="Altura">
+
+        <label for="diabetes">Diabetes:</label>
+        <select id="diabetes">
+            <option value="no">Não</option>
+            <option value="yes">Sim</option>
+        </select>
+
+        <label for="smoker">Fumante:</label>
+        <select id="smoker">
+            <option value="no">Não</option>
+            <option value="yes">Sim</option>
+        </select>
+
+        <label for="cvd">Doença Cardiovascular Anterior:</label>
+        <select id="cvd">
+            <option value="no">Não</option>
+            <option value="yes">Sim</option>
+        </select>
+
+        <label for="af">Fibrilhação Auricular:</label>
+        <select id="af">
+            <option value="no">Não</option>
+            <option value="yes">Sim</option>
+        </select>
+
+        <label for="lvh">Hipertrofia Ventrícular Esquerda:</label>
+        <select id="lvh">
+            <option value="no">Não</option>
+            <option value="yes">Sim</option>
+        </select>
+
+        <label for="claudication">Claudicação Intermitente:</label>
+        <select id="claudication">
+            <option value="no">Não</option>
+            <option value="yes">Sim</option>
+        </select>
+
+        <button onclick="calculateRisk()">Calcular Risco</button>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+    
